@@ -27,7 +27,6 @@ def userauth(request):
     login(request, user)
     return HttpResponseRedirect(r('home'), {'user': user})
 
-
 def user_logout(request):
     logout(request)
     return HttpResponseRedirect(r('user_login'))
