@@ -8,6 +8,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.dashboard-env/
+.vscode
 env/
 build/
 develop-eggs/

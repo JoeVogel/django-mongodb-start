@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{% block head_title %}Semente Urbana{% endblock head_title %}</title>
+    </head>
+    <body>
+        {% block menu %}
+            <a href="{% url 'home' %}">Home</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'user_logout' %}">Logout</a>
+            {% else %}
+            <a href="{% url 'user_login' %}">Login</a>
+            {% endif %}
+        {% endblock menu %}
+        {% block content %}
+        {% endblock content %}
+    </body>
+</html>
